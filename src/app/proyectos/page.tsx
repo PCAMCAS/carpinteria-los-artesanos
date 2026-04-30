@@ -38,11 +38,16 @@ export default async function ProyectosPage() {
                 src={project.image}
                 alt={project.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                placeholder="blur"
+                blurDataURL={project.blurDataURL}
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            <h2 className="mt-4 text-2xl font-semibold">{project.title}</h2>
+            <h2 className="mt-4 text-2xl font-semibold">
+              {project.title}
+            </h2>
 
             <p className="mt-2 text-muted-foreground">
               {project.description}
