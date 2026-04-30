@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { getProjectBySlug, getProjects } from "@/lib/projects"
 
 type ProjectPageProps = {
@@ -71,6 +71,9 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             alt={project.title}
             fill
             priority
+            sizes="(max-width: 1024px) 100vw, 60vw"
+            placeholder="blur"
+            blurDataURL={project.blurDataURL}
             className="object-cover"
           />
         </div>
