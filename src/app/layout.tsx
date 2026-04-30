@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://carpinteria-los-artesanos.vercel.app"),
   title: {
     default: "Carpintería Los Artesanos",
     template: "%s | Carpintería Los Artesanos",
@@ -27,7 +28,24 @@ export const metadata: Metadata = {
     "restauración",
     "madera",
     "artesanía",
+    "carpintería artesanal",
+    "muebles personalizados",
   ],
+  authors: [{ name: "Carpintería Los Artesanos" }],
+  creator: "Carpintería Los Artesanos",
+  openGraph: {
+    title: "Carpintería Los Artesanos",
+    description:
+      "Diseño, fabricación y restauración de piezas únicas en madera.",
+    url: "/",
+    siteName: "Carpintería Los Artesanos",
+    locale: "es_ES",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
