@@ -7,7 +7,7 @@ export const projects = [
     title: "Mesa de Roble Macizo",
     description: "Mesa artesanal hecha a mano con madera de roble.",
     image:
-      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=1600&auto=format&fit=crop",
     blurDataURL,
     materials: ["Roble", "Barniz natural"],
   },
@@ -16,7 +16,7 @@ export const projects = [
     title: "Reforma de Loft",
     description: "Carpintería integral en un loft moderno.",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1600&auto=format&fit=crop",
     blurDataURL,
     materials: ["Pino", "Acero"],
   },
